@@ -1,0 +1,13 @@
+Name: Phuc Tran
+Date: February 16th, 2023 
+Model Changes:
+1. Two more convolutional layers to increase the model's complexity
+2. Higher number of filters at each layer to capture more features
+Hyperparameter Changes:
+3. Increased weight decay for more regularization
+4. Early stopping at 13 Epochs to prevent overfitting
+5. Step Size at 10 to prevent overfitting
+Data Augmentation:
+5. Horizontal flip to increase the dataset by twice. Split the ratio to 70/30 Training/Validation. This ensures that the CNN doesn't overfit to the training data. We want the validation sample size to be more representative of what the training sample is.
+6. Whitening and contrast normalization to further augment the data into abstract features.
+Results: The model was able to improve from 56.34% validation accuracy to 66.17% validation accuracy. The runtime was about 28:30 minutes. There were no overfit concerns as the validation accuracy did not decrease towards the last epochs. There seems to be a small incline/plateau. 
